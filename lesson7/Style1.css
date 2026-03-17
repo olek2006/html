@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #b88f8f;
+}
+
+/* HEADER + NAV */
+header {
+    background-color: #e8cfcf;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* hover — білий фон */
+nav a:hover {
+    background-color: white;
+}
+
+/* visited — фіолетовий текст */
+nav a:visited {
+    color: purple;
+}
+
+/* MAIN */
+main {
+    width: 800px;
+    margin: 20px auto;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* SECTIONS */
+section {
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+/* INFO BLOCK */
+.info-box {
+    background-color: #d8cfcf;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+/* IMAGE */
+.image-box {
+    background-color: #e6bebe;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.caption {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* FILMOGRAPHY */
+.filmography {
+    padding: 0;
+}
+
+.filmography li {
+    list-style: none;
+    padding: 10px;
+}
+
+.filmography li:nth-child(odd) {
+    background-color: #e6d6d6;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #e8cfcf;
+    margin-top: 20px;
+}
