@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: black;
+}
+
+nav a:hover {
+    color: red;
+}
+
+nav a:visited {
+    color: purple;
+}
+
+img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.highlight {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.films {
+    list-style-type: decimal;
+    padding: 0;
+}
+
+.films li:not(:last-child) {
+    border-bottom: 1px solid black;
+}
+
+.films li:nth-child(odd) {
+    background-color: #eaeaea;
+}
+
+.films li:nth-child(even) {
+    background-color: #d5d5d5;
+}
+
+.special {
+    background-color: gold;
+}
