@@ -2,180 +2,328 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Yardana, sans-serif;
     list-style: none;
 }
+
 body{
-    background: #edf3ff;
-    color: #000;
+    background: #edf4ff;
+    color: black;
 }
+
 a{
     text-decoration: none;
     color: inherit;
 }
+
 .wrapper{
     width: 1200px;
     max-width: 100%;
     margin: 0 auto;
 }
-header{
+
+.header{
     background: #fff;
-    border-bottom: 1px solid #cccccc;
-    box-shadow: 0 1px 8px 0 rgba(0,0,0,0.2);
+    border-bottom: 3px solid lightgray;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px 24px;
 }
+
 .header-grid{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
     column-gap: 20px;
 }
+
 .logo span{
     font-size: 30px;
     line-height: 36px;
 }
+
 .logo{
     font-size: 24px;
     line-height: 32px;
-    color: #5039f4;
+    color: #4f39f6;
     font-weight: 700;
 }
+
 nav ul{
     display: grid;
     grid-auto-flow: column;
     gap: 15px;
     align-items: center;
 }
+
 nav ul li a{
     font-size: 16px;
     line-height: 24px;
 }
+
 nav ul li a:hover{
-    color: #5039f4;
+    color: #4f39f6;
 }
+
 .header-btn{
     justify-self: end;
     padding: 8px 25px;
     border: none;
     border-radius: 10px;
-    background: #5039f4;
+    background: #4F39F6;
     color: #fff;
     cursor: pointer;
     font-size: 16px;
     line-height: 24px;
-    font-weight: 500;
+    font-weight: 600;
 }
+
 .header-btn:hover{
-    background: #4834d8;
+    background: #3e28e3;
 }
+
 .hero{
     padding: 64px 0;
     text-align: center;
 }
+
 .hero-grid{
     display: grid;
-    justify-content: center;
-    row-gap: 15px;
+    justify-items: center;
+    row-gap: 20px;
 }
-.hero-grid h1{
+
+.hero h1{
     font-size: 48px;
     line-height: 48px;
 }
-.hero-grid p{
+
+.hero p{
     font-size: 20px;
     line-height: 28px;
-    color: #67727e;
+    color: #5e656f;
 }
+
 .hero-btn{
     margin-top: 20px;
     display: grid;
+    place-items: center;
     grid-auto-flow: column;
     gap: 15px;
 }
+
 .btn{
     display: grid;
     place-items: center;
-    padding: 12px 32px;
+    padding:12px 32px;
     font-size: 18px;
     line-height: 28px;
     border-radius: 10px;
-    border: 2px solid #5039f4;
+    border: 2px solid #4F39F6;
     cursor: pointer;
 }
+
 .btn-start{
-    background: #5039f4;
+    background: #4F39F6;
     color: #fff;
     font-weight: 500;
 }
+
 .btn-start:hover{
-    background: #4834d8;
+    background: #3e28e3;
 }
+
 .btn-more{
     background: #fff;
-    color: #5039f4;
-    font-weight: 500;
+    color: #3e39F6;
 }
+
 .btn-more:hover{
     background: transparent;
 }
-.cards-grid{
+
+.card-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
+
 .card{
-    background: #fff;
+    background: #ffffff;
     border-radius: 10px;
     padding: 24px;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     display: grid;
     grid-template-rows: repeat(5, auto);
     row-gap: 15px;
 }
-.card-icon{
+
+.card-item{
     font-size: 48px;
     line-height: 48px;
 }
+
 .card h2{
     font-size: 24px;
     line-height: 32px;
     font-weight: 500;
 }
+
 .card p{
     font-size: 16px;
     line-height: 26px;
-    color: #67727e;
+    color: #5e656f;
     padding-bottom: 15px;
-    border-bottom: 1px solid rgba(185,185,185,0.33);
+    border-bottom: 1px solid rgba(185, 185, 185, 0.33);
 }
-.card h3{
-    font-size: 16px;
-    line-height: 28px;
-    color: #465471;
-}
-.tags{
 
+.card h3{
+    font-size: 14px;
+    line-height: 20px;
+    color: #5e656f;
 }
+
+.tags{
+}
+
 .tags span{
     display: inline-grid;
     align-items: center;
     padding: 4px 12px;
-    background: #e1e7ff;
-    color: #5039f4;
+    color: #4a3984;
+    background: #e4e4e4;
     border-radius: 20px;
     margin: 10px 3px 0 0;
 }
+
 .footer{
-    background: #101727;
-    color: #fff;
+    background: linear-gradient(180deg, #0f172a 0%, #0b1020 100%);
+    color: #ffffff;
+    padding: 60px 0 30px;
 }
-.footer-container{
+
+.footer .wrapper{
     display: grid;
-    row-gap: 15px;
+    row-gap: 40px;
 }
+
 .footer-top{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
     column-gap: 40px;
-    align-items: center;
+}
+
+.footer-column{
+    display: grid;
+    row-gap: 14px;
+}
+
+.footer-logo{
+    font-size: 24px;
+    font-weight: 700;
+    color: #6c63ff;
+}
+
+.footer-logo span{
+    font-size: 28px;
+    margin-right: 6px;
+}
+
+.footer-description{
+    font-size: 14px;
+    line-height: 22px;
+    color: #cbd5e1;
+}
+
+.footer-column h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.footer-column ul{
+    display: grid;
+    row-gap: 10px;
+}
+
+.footer-column ul li a{
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+.footer-column ul li a:hover{
+    color: #6c63ff;
+}
+
+.footer-column p{
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+.social{
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 12px;
+    justify-content: start;
+}
+
+.social a{
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    background: #1e293b;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+.social a:hover{
+    background: #6c63ff;
+}
+
+.subscribe-label{
+    margin-top: 12px;
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+.subscribe-form{
+    display: grid;
+    grid-template-columns: 1fr 44px;
+    column-gap: 10px;
+}
+
+.subscribe-form input{
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #1e293b;
+    color: #fff;
+}
+
+.subscribe-form button{
+    border: none;
+    border-radius: 8px;
+    background: #6c63ff;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.subscribe-form button:hover{
+    background: #5b52e8;
+}
+
+.footer-bottom{
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 20px;
+    display: grid;
+    row-gap: 8px;
+    justify-items: center;
+    text-align: center;
+}
+
+.footer-bottom p{
+    font-size: 14px;
+    color: #cbd5e1;
 }
